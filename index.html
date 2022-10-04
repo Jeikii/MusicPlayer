@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" href="https://i.pinimg.com/564x/88/aa/8c/88aa8caae7e763be5c4b6565c224a672.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="music-card">
+        <!-- Header -->
+        <header class="music-card__header">
+            <span class="music-card__icon">
+                <i class="fa-solid fa-headphones"></i>
+            </span>
+            <span class="title">Now playing:</span>
+            <div class="music-card__user">
+                <img class="music-card__user-png" src="https://cf.shopee.vn/file/8a1ca48d5ae68194bc256a80b18d2e9c_tn" alt="">
+            </div>
+        </header>
+
+        <!-- CD -->
+        <div class="cd">
+            <img alt="" class="cd__img">
+        </div>
+
+        <!-- Song -->
+        <div class="song">
+            <h3 class="song__name"></h3>
+            <p class="song__author"></p>
+        </div>
+
+        <!-- Progress bar -->
+        <div class="progress-bar">
+            <div class="progress-bar__value"></div>
+        </div>
+        <div class="progress-time">
+            <span class="progress-time__current-time"></span>
+            <span class="progress-time__duration"></span>
+        </div>
+
+        <!-- Volume -->
+        <div class="volume-change">
+            <div class="volume">
+                <i class="fa-solid fa-volume-high volume__icon"></i>
+                <i class="fa-solid fa-volume-xmark volume__icon--mute"></i>
+            </div>
+            <div class="volume-bar">
+                <div class="volume-bar__value"></div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="btn btn__random">
+                <i class="fa-solid fa-shuffle"></i>
+            </div>
+            <div class="btn btn__previous">
+                <i class="fa-solid fa-backward-step"></i>
+            </div>
+            <div class="btn btn__play">
+                <i class="fa-solid fa-circle-play btn__play--play-icon"></i>
+                <i class="fa-solid fa-circle-pause btn__play--pause-icon"></i>
+            </div>
+            <div class="btn btn__next">
+                <i class="fa-solid fa-forward-step"></i>
+            </div>
+            <div class="btn btn__repeat">
+                <i class="fa-solid fa-repeat btn__repeat-off"></i>
+            </div>
+        </div>
+
+        <!-- Audio -->
+        <audio src="" id="audio"></audio>
+
+        <!-- Wave-2 -->
+        <div id="wave-2">
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+        </div>
+    </div>
+
+    <!-- Playlist -->
+    <div class="playlist__container">
+        <div class="playlist">
+            <header class="playlist__header">
+                <h3>My playlist</h3>
+                <span class="close-list">
+                <i class="fa-solid fa-xmark"></i>
+                </span>
+            </header>
+            <ul class="playlist__list">
+                <!-- <li class="playlist__item">
+                    <div class="playlist__item-img">
+                        <img src="./assets/img/16typh.jpg" alt="">
+                    </div>
+                    <div class="playlist__item-info">
+                        <h3 class="playlist__item-name">MILLION DOLLAR BOY</h3>
+                        <p class="playlist__item-author">16TYPH</p>
+                    </div>
+                    <div class="music-waves">  
+                        <span></span>  
+                        <span></span>  
+                        <span></span>  
+                        <span></span>  
+                        <span></span>  
+                    </div>
+                    <span class="playlist__item-option">
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </span>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+
+        <!-- Design from: https://static.collectui.com/shots/3671744/musicloud-revolutionary-app-for-music-streaming-large -->
+</body>
+    <script src="./app.js"></script>
+</html>
